@@ -1,0 +1,25 @@
+body {background-color: #FAEA18;max-width: 500px;margin: auto;}
+.popup {display: none;position: absolute;top: 50%;transform: translateY(-50%);padding: 20px;background-color: #fff;border: 1px solid #ddd;z-index: 2; border-radius: 20px;}
+.popup input,.popup button {margin-bottom: 10px;}
+.popup span.close {position: absolute;top: 10px;right: 10px;font-size: 20px;cursor: pointer;}
+.logo_header {display: flex;justify-content: space-between;align-items: center;margin: 15px 10px 0px;}
+.logo_header_icons {display: flex;}
+.logo_header_icons img {max-width: 51px;max-height: 51px;margin: 0 10px;}
+.middle-section {background-image: url('./pictures/background.svg');background-size: cover;background-repeat: no-repeat;background-position: center center;height: 70vh;position: relative;}
+.my-passport_img img {position: absolute;top: 15px;left: 20px;}
+.photo {top: 125px !important;left: 95px !important;}
+.passport-photo img {position: relative;}
+.edit-photo {position: relative;}
+.edit-photo img {position: absolute !important;left: 200px;top: 5px;}
+.edit-icon img {top: 10px;left: 205px;}
+#imageContainer {position: relative;}
+#userImage {width: 105px;height: 125px;object-fit: cover;position: relative;transform: rotateZ(12deg);top: 125px;left: 95px;}
+#nameDisplay {position: absolute;top: 145px;transform: rotateZ(12deg);left: 220px;font-family: "hobeaux", sans-serif;font-weight: 900;font-size: 35px;color: #0394C3;text-shadow: 2px 2px 2px #021689;}
+.capture-buttons {display: flex;justify-content: center; margin-top: 0;}
+#cameraVideo{width: 90vw; height: 35vh;}
+button{border: transparent;}
+.input-box{width: 250px; height: 48px; font-size: 16px; font-family: "hobeaux", sans-serif; background-color: #CFCFCF; color: #979797; border: 1px solid #CFCFCF; border-radius: 8px; text-align: center;  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25) inset;}
+.text-input{display: flex; flex-direction: column; align-items: center;}
+.save_btn{padding-left: 40px; padding-right: 40px; padding-top: 10px; padding-bottom: 10px; background: #A1A1A1; box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 12px; overflow: hidden; border: 5px white solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex; font-family: "hobeaux", sans-serif; color: #fff; font-size: 36px;}
+:focus-visible{ outline: none;}
+.download_btn{position: absolute; bottom: 0;padding: 10px 20px; background: #0394C3; box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 12px; overflow: hidden; border: 5px white solid; gap: 10px; display: inline-flex; text-align: center; color: white; font-size: 18px; font-family: Hobeaux; font-weight: 900; word-wrap: break-word;}

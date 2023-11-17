@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        rel="icon" type="image/x-icon">
+    <title>Image Editor</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css" media="all">
+    <link rel="stylesheet" href="https://use.typekit.net/xjb7ted.css">
+</head>
+
+<body>
+
+    <div class="logo_header">
+        <img src="./assets/pictures/milkybar-logo-01 1.png" />
+        <div class="logo_header_icons">
+            <div>
+                <img src="./assets/pictures/sourvenirs.png" />
+            </div>
+            <div>
+                <img src="./assets/pictures/home-icon.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-section">
+        <div class="my-passport_img">
+            <img src="./assets/pictures/passport.svg" />
+            <div class="passport-photo" id="imageContainer">
+                <img id="fallbackImage" class="photo" src="./assets/pictures/profile photo.svg" onclick="openPopup()" />
+                <img id="userImage" style="display: none;" onclick="openPopup()">
+                <div class="edit-photo">
+                    <img src="./assets/pictures/edit-background.svg" />
+                    <div class="edit-icon">
+                        <img src="./assets/pictures/edit-icon.svg" />
+                    </div>
+                </div>
+                <p id="nameDisplay"></p>
+            </div>
+        </div>
+
+        <button class="download_btn" onclick="downloadImage()"><img src="./assets/pictures/download-btn-02-02 1.svg"/>download</button>
+    </div>
+
+    <div id="namePopup" class="popup">
+        <video id="cameraVideo" autoplay></video>
+        <div class="capture-buttons">
+            <button onclick="captureImage()"><img src="./assets/pictures/shutter button.png"/></button>
+            <!-- <button onclick="replaceImage()">Replace</button> -->
+        </div>
+        <div class="text-input">
+            <input type="text" class="input-box" id="popupName" maxlength="30" placeholder="Enter your first name">
+            <button class="save_btn" onclick="savePopupName()">Save</button>
+        </div>
+        <span class="close" onclick="closePopup()"><img src="./assets/pictures/close-btn.png"/></span>
+    </div>
+    
+
+    <script type="text/javascript" src="./assets/script.js"></script>
+</body>
+
+</html>
